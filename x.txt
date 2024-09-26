@@ -1,4 +1,4 @@
-! Title: X 広告ブロック + おまけ
+! Title: X 広告非表示 + おまけ
 
 ! 広告
 x.com#?#div[data-testid="cellInnerDiv"]:has(div[data-testid="placementTracking"] > article)
