@@ -1,0 +1,36 @@
+! Title: X 広告ブロック + おまけ
+
+! 広告
+x.com#?#div[data-testid="cellInnerDiv"]:has(div[data-testid="placementTracking"] > article)
+x.com#?#div[data-testid="cellInnerDiv"]:has(div[data-testid="eventHero"])
+
+! プレミアムを入手
+x.com#?#div[data-testid="TopNavBar"] div:has(> a[href="/i/premium_sign_up"])
+
+! ナビゲーションバー
+x.com#?#nav[role="navigation"] a[href="/i/grok"]
+x.com#?#nav[role="navigation"] a[href="/jobs"]
+x.com#?#nav[role="navigation"] a[href$="/communities"]
+x.com#?#nav[role="navigation"] a[href="/i/premium_sign_up"]
+x.com#?#nav[role="navigation"] a[href="/i/verified-orgs-signup"]
+
+! プロフィール タブ
+x.com#?#nav[role="navigation"] div[data-testid="ScrollSnap-List"] > div:has(> a[href$="/highlights"])
+x.com#?#nav[role="navigation"] div[data-testid="ScrollSnap-List"] > div:has(> a[href$="/articles"])
+
+! ドロワー
+x.com#?#div[role="dialog"] div:has(> a[href="/i/premium_sign_up"])
+x.com#?#div[role="dialog"] div:has(> a[href="/i/verified-orgs-signup"])
+x.com#?#div[role="dialog"] div:has(> a[href="/settings/monetization"])
+x.com#?#div[role="dialog"] div:has(> a[href^="https://ads.x.com/"])
+x.com#?#div[role="dialog"] div:has(> a[href="/jobs"])
+
+! もっと見る
+x.com#?#div[data-testid="Dropdown"] a[href="/settings/monetization"]
+x.com#?#div[data-testid="Dropdown"] a[href^="https://ads.x.com/"]
+
+! プレミアムにサブスクライブ
+x.com#?#div:has(> aside[role="complementary"] > a[href="/i/premium_sign_up"])
+
+! 認証される
+x.com#?#div[data-testid="UserName"] a[href="/i/premium_sign_up"]
